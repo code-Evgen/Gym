@@ -1,0 +1,32 @@
+2024-02-15 23:16:32 INFO  TrainingTypeService:24 - creating training type - running
+2024-02-15 23:16:32 INFO  TrainingTypeService:33 - training type already exist
+2024-02-15 23:16:32 INFO  TrainingTypeService:38 - select training type - 0
+2024-02-15 23:16:32 INFO  TrainingTypeService:46 - training type selected - true
+2024-02-15 23:16:32 INFO  TrainingTypeService:24 - creating training type - cycling
+2024-02-15 23:16:32 INFO  TrainingTypeService:30 - training type created
+2024-02-15 23:16:32 INFO  TrainingTypeService:38 - select training type - 3
+2024-02-15 23:16:32 INFO  TrainingTypeService:46 - training type selected - true
+2024-02-15 23:16:32 INFO  TrainingTypeService:24 - creating training type - boxing
+2024-02-15 23:16:32 INFO  TrainingTypeService:33 - training type already exist
+2024-02-15 23:16:32 INFO  TrainingTypeService:38 - select training type - 1
+2024-02-15 23:16:32 INFO  TrainingTypeService:46 - training type selected - true
+2024-02-15 23:16:32 INFO  TraineeStorage:26 - creating trainee - Aaa_Bbb
+2024-02-15 23:16:32 DEBUG User:106 - Username is new - Aaa.Bbb
+2024-02-15 23:16:32 DEBUG User:118 - Password generated. Length - 10
+2024-02-15 23:16:32 INFO  TraineeStorage:34 - trainee created - true
+2024-02-15 23:16:32 INFO  TraineeStorage:26 - creating trainee - Mickey_Mouse
+2024-02-15 23:16:32 DEBUG User:106 - Username is new - Mickey.Mouse
+2024-02-15 23:16:32 DEBUG User:118 - Password generated. Length - 10
+2024-02-15 23:16:32 INFO  TraineeStorage:34 - trainee created - true
+2024-02-15 23:16:32 INFO  TraineeStorage:75 - select trainee - Mickey.Mouse
+2024-02-15 23:16:32 DEBUG TraineeStorage:82 - trainee selected - Mickey.Mouse
+2024-02-15 23:16:32 INFO  TraineeStorage:84 - trainee selected - true
+2024-02-15 23:16:32 INFO  TrainerService:22 - creating trainer - Arnold_Schwarzenegger
+2024-02-15 23:16:32 DEBUG User:106 - Username is new - Arnold.Schwarzenegger
+2024-02-15 23:16:32 DEBUG User:118 - Password generated. Length - 10
+2024-02-15 23:16:32 INFO  TrainerService:30 - trainer created - true
+2024-02-15 23:16:32 INFO  TrainerService:22 - creating trainer - Arnold_Schwarzenegger
+2024-02-15 23:16:32 DEBUG User:98 - Username already exist - Arnold.Schwarzenegger
+2024-02-15 23:16:32 DEBUG User:102 - Username created - Arnold.Schwarzenegger1
+2024-02-15 23:16:32 DEBUG User:118 - Password generated. Length - 10
+2024-02-15 23:16:32 INFO  TrainerService:30 - trainer created - true
