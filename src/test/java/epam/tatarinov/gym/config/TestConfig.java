@@ -10,9 +10,22 @@ import epam.tatarinov.gym.Storages.TraineeStorage;
 import epam.tatarinov.gym.Storages.TrainerStorage;
 import epam.tatarinov.gym.Storages.TrainingStorage;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import static org.mockito.Mockito.mock;
 
+
+//@Configuration
+//@ComponentScan("epam.tatarinov.gym")
+//@PropertySource({
+//        "classpath:storageLocation.properties",
+//        "classpath:database.properties",
+//        "classpath:hibernate.properties"
+//})
+//@EnableTransactionManagement
 public class TestConfig {
 
     @Bean

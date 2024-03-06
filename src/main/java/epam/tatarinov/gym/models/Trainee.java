@@ -1,21 +1,41 @@
 package epam.tatarinov.gym.models;
 
-import org.springframework.stereotype.Component;
+import jakarta.persistence.*;
 
-import java.time.LocalDate;
 import java.util.Date;
+import java.util.List;
 
+@Entity
+@Table (name = "trainee")
+@PrimaryKeyJoinColumn (name = "user_id")
+//@DiscriminatorValue("trainee")
 public class Trainee extends User{
-    private LocalDate dateOfBirth;
+//    @Id
+    @Column (name = "trainee_id", insertable = false, updatable = false, columnDefinition="serial")
+    private int traineeId;
+
+    @Column(name = "date_of_birth")
+    private Date dateOfBirth;
+
+    @Column(name = "address")
     private String address;
-    private int userId;
-    private Training training;
+
+    @ManyToMany
+    @JoinTable(name = "trainee_trainer",
+            joinColumns = @JoinColumn(name = "trainee_id", referencedColumnName = "trainee_id"),
+            inverseJoinColumns = @JoinColumn(name = "trainer_id", referencedColumnName = "trainer_id"))
+    private List<Trainer> trainerList;
+
+
+    @OneToMany(mappedBy = "trainee", fetch = FetchType.LAZY)
+    private List<Training> trainingList;
 
 
     public Trainee() {
     }
 
-    public LocalDate getDateOfBirth() {
+
+    public Date getDateOfBirth() {
         return dateOfBirth;
     }
 
@@ -23,15 +43,19 @@ public class Trainee extends User{
         return address;
     }
 
-    public int getUserId() {
-        return userId;
+    public int getTraineeId() {
+        return traineeId;
     }
 
-    public Training getTraining() {
-        return training;
+    public List<Trainer> getTrainerList() {
+        return trainerList;
     }
 
-    public void setDateOfBirth(LocalDate dateOfBirth) {
+    public List<Training> getTrainingList() {
+        return trainingList;
+    }
+
+    public void setDateOfBirth(Date dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 
@@ -39,14 +63,17 @@ public class Trainee extends User{
         this.address = address;
     }
 
-    public void setUserId(int userId) {
-        this.userId = userId;
+    public void setTraineeId(int traineeId) {
+        this.traineeId = traineeId;
     }
 
-    public void setTraining(Training training) {
-        this.training = training;
+    public void setTrainerList(List<Trainer> trainerList) {
+        this.trainerList = trainerList;
     }
 
+    public void setTrainingList(List<Training> trainingList) {
+        this.trainingList = trainingList;
+    }
 
     @Override
     public String toString() {
@@ -58,12 +85,12 @@ public class Trainee extends User{
         return "Trainee{" +
                 "dateOfBirth=" + date +
                 ", address='" + address + '\'' +
-                ", userId=" + userId +
-                ", firstName='" + super.getFirstName() + '\'' +
-                ", lastName='" + super.getLastName() + '\'' +
-                ", username='" + super.getUsername() + '\'' +
-                ", password='" + super.getPassword() + '\'' +
-                ", isActive=" + super.isActive() +
+//                ", userId=" + getId() +
+//                ", firstName='" + super.getFirstName() + '\'' +
+//                ", lastName='" + super.getLastName() + '\'' +
+//                ", username='" + super.getUsername() + '\'' +
+//                ", password='" + super.getPassword() + '\'' +
+//                ", isActive=" + super.isActive() +
                 '}';
     }
 }

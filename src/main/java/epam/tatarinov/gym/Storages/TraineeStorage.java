@@ -42,12 +42,12 @@ public class TraineeStorage {
         return trainees.get(id);
     }
 
-    public Trainee selectByUsername(String username){
-        for(Map.Entry<Integer, Trainee> trainee : trainees.entrySet()){
-            if (trainee.getValue().getUsername().equals(username)){
-                return trainee.getValue();
-            }
-        }
-        return null;
-    }
+//    public Trainee selectByUsername(String username){
+//        for(Map.Entry<Integer, Trainee> trainee : trainees.entrySet()){
+//            if (trainee.getValue().getUsername().equals(username)){
+//                return trainee.getValue();
+//            }
+//        }
+//        return null;
+//    }
 }

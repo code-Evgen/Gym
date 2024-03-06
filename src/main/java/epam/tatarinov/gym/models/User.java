@@ -1,20 +1,39 @@
 package epam.tatarinov.gym.models;
 
-import epam.tatarinov.gym.Services.TrainerService;
+import jakarta.persistence.*;
 import org.apache.log4j.Logger;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 
-
+@Entity
+@Table(name = "user_table")
+@Inheritance(strategy = InheritanceType.JOINED)
 public abstract class User {
-    private static int userID;
+//    private static int userID;
+
+    @Id
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
+    @Column(name = "first_name")
     private String firstName;
+
+    @Column(name = "last_name")
     private String lastName;
+
+    @Column(name = "username")
     private String username;
+
+    @Column(name = "password")
     private String password;
+
+    @Column(name = "isactive")
     private boolean isActive;
+
+
     private static final Logger logger = Logger.getLogger(User.class);
 
 
@@ -34,8 +53,14 @@ public abstract class User {
         this.isActive = isActive;
     }
 
-    public static int getUserID() {
-        return userID;
+
+    //    public static int getUserID() {
+//        return userID;
+//    }
+
+
+    public int getId() {
+        return id;
     }
 
     public String getFirstName() {
@@ -60,8 +85,13 @@ public abstract class User {
 
 
 
-    public static void setUserID(int userID) {
-        User.userID = userID;
+//    public static void setUserID(int userID) {
+//        User.userID = userID;
+//    }
+
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public void setFirstName(String firstName) {
@@ -87,7 +117,7 @@ public abstract class User {
 
 
     public static String createUsername(String firstName, String lastName){
-        setUserID(getUserID()+1);
+//        setUserID(getUserID()+1);
         String username = firstName + "." + lastName;
         username = checkUserExistByUsername(username);
         return username;

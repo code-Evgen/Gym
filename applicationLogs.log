@@ -1,32 +1,70 @@
-2024-02-15 23:16:32 INFO  TrainingTypeService:24 - creating training type - running
-2024-02-15 23:16:32 INFO  TrainingTypeService:33 - training type already exist
-2024-02-15 23:16:32 INFO  TrainingTypeService:38 - select training type - 0
-2024-02-15 23:16:32 INFO  TrainingTypeService:46 - training type selected - true
-2024-02-15 23:16:32 INFO  TrainingTypeService:24 - creating training type - cycling
-2024-02-15 23:16:32 INFO  TrainingTypeService:30 - training type created
-2024-02-15 23:16:32 INFO  TrainingTypeService:38 - select training type - 3
-2024-02-15 23:16:32 INFO  TrainingTypeService:46 - training type selected - true
-2024-02-15 23:16:32 INFO  TrainingTypeService:24 - creating training type - boxing
-2024-02-15 23:16:32 INFO  TrainingTypeService:33 - training type already exist
-2024-02-15 23:16:32 INFO  TrainingTypeService:38 - select training type - 1
-2024-02-15 23:16:32 INFO  TrainingTypeService:46 - training type selected - true
-2024-02-15 23:16:32 INFO  TraineeStorage:26 - creating trainee - Aaa_Bbb
-2024-02-15 23:16:32 DEBUG User:106 - Username is new - Aaa.Bbb
-2024-02-15 23:16:32 DEBUG User:118 - Password generated. Length - 10
-2024-02-15 23:16:32 INFO  TraineeStorage:34 - trainee created - true
-2024-02-15 23:16:32 INFO  TraineeStorage:26 - creating trainee - Mickey_Mouse
-2024-02-15 23:16:32 DEBUG User:106 - Username is new - Mickey.Mouse
-2024-02-15 23:16:32 DEBUG User:118 - Password generated. Length - 10
-2024-02-15 23:16:32 INFO  TraineeStorage:34 - trainee created - true
-2024-02-15 23:16:32 INFO  TraineeStorage:75 - select trainee - Mickey.Mouse
-2024-02-15 23:16:32 DEBUG TraineeStorage:82 - trainee selected - Mickey.Mouse
-2024-02-15 23:16:32 INFO  TraineeStorage:84 - trainee selected - true
-2024-02-15 23:16:32 INFO  TrainerService:22 - creating trainer - Arnold_Schwarzenegger
-2024-02-15 23:16:32 DEBUG User:106 - Username is new - Arnold.Schwarzenegger
-2024-02-15 23:16:32 DEBUG User:118 - Password generated. Length - 10
-2024-02-15 23:16:32 INFO  TrainerService:30 - trainer created - true
-2024-02-15 23:16:32 INFO  TrainerService:22 - creating trainer - Arnold_Schwarzenegger
-2024-02-15 23:16:32 DEBUG User:98 - Username already exist - Arnold.Schwarzenegger
-2024-02-15 23:16:32 DEBUG User:102 - Username created - Arnold.Schwarzenegger1
-2024-02-15 23:16:32 DEBUG User:118 - Password generated. Length - 10
-2024-02-15 23:16:32 INFO  TrainerService:30 - trainer created - true
+2024-03-06 13:36:52 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.1.5.Final
+2024-03-06 13:36:52 INFO  Environment:148 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.hbm2ddl.auto=update, hibernate.bytecode.use_reflection_optimizer=false, hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect, hibernate.show_sql=true}
+2024-03-06 13:36:52 INFO  SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-03-06 13:36:54 INFO  JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-03-06 13:36:54 INFO  SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-03-06 13:36:54 INFO  JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-03-06 13:36:56 INFO  TrainingTypeService:42 - selecting training type
+2024-03-06 13:36:56 INFO  TrainingTypeService:50 - training type selected - true
+2024-03-06 13:36:56 INFO  TrainingTypeService:42 - selecting training type
+2024-03-06 13:36:56 INFO  TrainingTypeService:50 - training type selected - true
+2024-03-06 13:36:56 INFO  TraineeStorage:35 - creating trainee - traineeName_traineeLastName
+2024-03-06 13:36:56 INFO  TraineeStorage:43 - trainee created- traineeName_traineeLastName
+2024-03-06 13:36:57 INFO  TraineeStorage:35 - creating trainee - traineeName_traineeLastName
+2024-03-06 13:36:57 INFO  TraineeStorage:43 - trainee created- traineeName_traineeLastName
+2024-03-06 13:36:57 INFO  TraineeStorage:110 - select trainee - 2
+2024-03-06 13:36:57 INFO  TraineeStorage:119 - trainee selected - true
+2024-03-06 13:36:57 INFO  TraineeStorage:196 - trainee deactivating - 2
+2024-03-06 13:36:57 INFO  TraineeStorage:205 - trainee deactivated - true
+2024-03-06 13:36:57 INFO  TraineeStorage:110 - select trainee - 2
+2024-03-06 13:36:57 INFO  TraineeStorage:119 - trainee selected - true
+2024-03-06 13:36:57 INFO  TraineeStorage:131 - select trainee - traineeName.traineeLastName1
+2024-03-06 13:36:57 INFO  TraineeStorage:140 - trainee selected - true
+2024-03-06 13:36:57 INFO  TraineeStorage:178 - trainee activating - 2
+2024-03-06 13:36:57 INFO  TraineeStorage:187 - trainee activated - true
+2024-03-06 13:36:57 INFO  TraineeStorage:110 - select trainee - 2
+2024-03-06 13:36:57 INFO  TraineeStorage:119 - trainee selected - true
+2024-03-06 13:36:57 INFO  TraineeStorage:131 - select trainee - username
+2024-03-06 13:36:57 INFO  TraineeStorage:140 - trainee selected - true
+2024-03-06 13:36:57 INFO  TraineeStorage:67 - deleting trainee - username
+2024-03-06 13:36:57 INFO  TraineeStorage:70 - trainee deleted - true
+2024-03-06 13:36:57 INFO  TraineeStorage:131 - select trainee - username
+2024-03-06 13:36:57 INFO  TraineeStorage:140 - trainee selected - false
+2024-03-06 13:36:57 INFO  TraineeStorage:158 - trainee password changing - 2
+2024-03-06 13:36:57 INFO  TraineeStorage:167 - trainee password changed - true
+2024-03-06 13:36:57 INFO  TraineeStorage:110 - select trainee - 2
+2024-03-06 13:36:57 INFO  TraineeStorage:119 - trainee selected - true
+2024-03-06 13:36:57 INFO  TraineeStorage:35 - creating trainee - null_null
+2024-03-06 13:36:57 INFO  TraineeStorage:46 - user field validation failnull_null
+2024-03-06 13:36:57 INFO  TraineeStorage:35 - creating trainee - null_null
+2024-03-06 13:36:57 INFO  TraineeStorage:46 - user field validation failnull_null
+2024-03-06 13:36:58 INFO  TraineeStorage:131 - select trainee - username
+2024-03-06 13:36:58 INFO  TraineeStorage:140 - trainee selected - true
+2024-03-06 13:36:58 INFO  TraineeStorage:53 - deleting trainee - 5
+2024-03-06 13:36:58 INFO  TraineeStorage:57 - trainee deleted - false
+2024-03-06 13:36:58 INFO  TraineeStorage:110 - select trainee - 5
+2024-03-06 13:36:58 INFO  TraineeStorage:119 - trainee selected - false
+2024-03-06 13:36:58 INFO  TrainerService:44 - creating trainer - trainerName_trainerLastName
+2024-03-06 13:36:58 INFO  TrainerService:52 - trainee created- trainerName_trainerLastName
+2024-03-06 13:36:58 INFO  TrainerService:44 - creating trainer - trainerName_trainerLastName
+2024-03-06 13:36:58 INFO  TrainerService:52 - trainee created- trainerName_trainerLastName
+2024-03-06 13:36:58 INFO  TrainerService:167 - trainer deactivating - 2
+2024-03-06 13:36:58 INFO  TrainerService:175 - trainer deactivated - true
+2024-03-06 13:36:58 INFO  TrainerService:89 - select trainee - 2
+2024-03-06 13:36:58 INFO  TrainerService:97 - trainer selected - true
+2024-03-06 13:36:58 INFO  TrainerService:154 - trainer activating - 2
+2024-03-06 13:36:58 INFO  TrainerService:162 - trainer activated - true
+2024-03-06 13:36:58 INFO  TrainerService:89 - select trainee - 2
+2024-03-06 13:36:58 INFO  TrainerService:97 - trainer selected - true
+2024-03-06 13:36:58 INFO  TrainerService:44 - creating trainer - null_null
+2024-03-06 13:36:58 INFO  TrainerService:55 - user field validation failnull_null
+2024-03-06 13:36:58 INFO  TrainerService:44 - creating trainer - null_null
+2024-03-06 13:36:58 INFO  TrainerService:55 - user field validation failnull_null
+2024-03-06 13:36:58 INFO  TrainerService:89 - select trainee - 2
+2024-03-06 13:36:58 INFO  TrainerService:97 - trainer selected - true
+2024-03-06 13:36:58 INFO  TrainerService:104 - select trainee - trainerName.trainerLastName1
+2024-03-06 13:36:58 INFO  TrainerService:113 - trainer selected - true
+2024-03-06 13:36:59 INFO  TrainerService:140 - trainer password changing - 2
+2024-03-06 13:36:59 INFO  TrainerService:148 - trainer password changed - true
+2024-03-06 13:36:59 INFO  TrainerService:89 - select trainee - 2
+2024-03-06 13:36:59 INFO  TrainerService:97 - trainer selected - true
